@@ -1,0 +1,3 @@
+[workspace]
+members = ["fuzz", "eisenstein-fuzz-tests"]
+resolver = "2"

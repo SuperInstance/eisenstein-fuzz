@@ -1,0 +1,34 @@
+[package]
+name = "eisenstein-fuzz"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+libfuzzer-sys = "0.4"
+eisenstein = { path = "../../eisenstein" }
+arbitrary = { version = "1", features = ["derive"] }
+
+[[bin]]
+name = "rotation_identity"
+path = "fuzz_targets/rotation_identity.rs"
+
+[[bin]]
+name = "norm_nonneg"
+path = "fuzz_targets/norm_nonneg.rs"
+
+[[bin]]
+name = "ring_axioms"
+path = "fuzz_targets/ring_axioms.rs"
+
+[[bin]]
+name = "d6_closure"
+path = "fuzz_targets/d6_closure.rs"
+
+[[bin]]
+name = "conjugate_involution"
+path = "fuzz_targets/conjugate_involution.rs"
+
+[[bin]]
+name = "disk_coverage"
+path = "fuzz_targets/disk_coverage.rs"
