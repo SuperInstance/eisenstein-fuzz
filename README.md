@@ -1,5 +1,15 @@
 # eisenstein-fuzz
 
+
+## Meta
+
+**Domain:** constraint-theory
+**Depends on:** —
+**Depended by:** —
+**Implements:** Property-based fuzzing for Eisenstein integers — prove the zero-drift claim
+**Related:** —
+
+
 **Millions of random inputs. Zero properties broken.**
 
 The [eisenstein](https://github.com/SuperInstance/eisenstein) crate claims exact arithmetic with zero drift on the hexagonal lattice. This project exists to make that claim expensive. Thirteen property tests and six fuzz targets hammer the algebra with every input the fuzzer can generate — random coordinates, adversarial edge cases, pathological values — looking for the crack that proves the claim wrong.
